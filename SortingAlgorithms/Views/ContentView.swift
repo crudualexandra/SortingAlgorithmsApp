@@ -19,14 +19,48 @@ struct ContentView: View {
                 }
                 
                 // Step-by-Step Sorting
-                NavigationLink(destination: StepByStepSortingView()) {
-                    Text("Step-by-Step Sorting")
+//                NavigationLink(destination: StepByStepSortingView()) {
+//                    Text("Step-by-Step Sorting")
+//                        .font(.headline)
+//                        .padding()
+//                        .frame(maxWidth: .infinity)
+//                        .background(Color.green.opacity(0.2))
+//                        .cornerRadius(8)
+//                }
+
+                // NEW LINK: Bubble Sort Animation
+                NavigationLink(destination: BubbleSortAnimatedView()) {
+                    Text("Animated Bubble Sort")
                         .font(.headline)
                         .padding()
                         .frame(maxWidth: .infinity)
-                        .background(Color.green.opacity(0.2))
+                        .background(Color.orange.opacity(0.2))
                         .cornerRadius(8)
                 }
+                NavigationLink(destination: MergeSortAnimatedView()) {
+                                    Text("Merge Sort Animation")
+                                        .font(.headline)
+                                        .padding()
+                                        .frame(maxWidth: .infinity)
+                                        .background(Color.purple.opacity(0.2))
+                                        .cornerRadius(8)
+                                }
+                NavigationLink(destination: QuickSortAnimatedView()) {
+                                    Text("Quick Sort Animation")
+                                        .font(.headline)
+                                        .padding()
+                                        .frame(maxWidth: .infinity)
+                                        .background(Color.red.opacity(0.2))
+                                        .cornerRadius(8)
+                                }
+                NavigationLink(destination: HeapSortAnimatedView()) {
+                                    Text("Heap Sort Animation")
+                                        .font(.headline)
+                                        .padding()
+                                        .frame(maxWidth: .infinity)
+                                        .background(Color.yellow.opacity(0.2))
+                                        .cornerRadius(8)
+                                }
 
                 Spacer()
             }
